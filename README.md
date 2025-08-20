@@ -1,5 +1,6 @@
 # OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
+
 # Linux commands-Shell scripting
 Linux commands-Shell scripting
 
@@ -44,6 +45,7 @@ cat < file1
 
 cat < file2
 ## OUTPUT
+
 ![Screenshot from 2024-02-28 10-37-09](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/c1ba6100-5b12-483a-8253-6ba238f3bb0e)
 
 
@@ -51,6 +53,7 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
+ 
  ![Screenshot from 2024-02-28 10-36-33](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/c3b1ff0d-5bfc-4b7f-bbe4-fec0806e7f00)
 
 
@@ -62,6 +65,7 @@ comm file1 file2
  
 diff file1 file2
 ## OUTPUT
+
 ![image-3](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/0a4f1844-e9cf-4b27-8969-da9bdb7d811e)
 
 
@@ -90,7 +94,6 @@ cut -c1-2 file11
 
 
 ![image-4](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/054b4738-2b66-4b75-b51a-b77b2aec457e)
-
 
 cut -d "|" -f 1 file22
 ## OUTPUT
@@ -148,11 +151,11 @@ cat newfile | grep -i -c "hello"
 grep -R ubuntu /etc
 ## OUTPUT
 
-![image-12](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/e5ce476b-af10-4403-a1b6-884824aafb39)
-
+<img width="1443" height="921" alt="Screenshot 2025-08-20 090406" src="https://github.com/user-attachments/assets/14bf057c-f8f0-4439-9124-9962bbe15d7d" />
 
 grep -w -n world newfile   
 ## OUTPUT
+
 ![image-13](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/9d702bdf-f5b3-4cf6-8c16-75cb617b988b)
 
 
@@ -183,10 +186,12 @@ egrep -w 'Hello|hello' newfile
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+
 ![image-15](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/54c28f0f-0fd7-4334-a441-53faca2c20c0)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+
 ![image-16](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/2b634ac3-eae4-4e48-9afa-2488b7a6cc80)
 
 
@@ -194,10 +199,12 @@ egrep -w '(H|h)ell[a-z]' newfile
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+
 ![image-17](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/2152e2b4-b1b3-46b8-b677-eb338589c175)
 
 egrep '(world$)' newfile 
 ## OUTPUT
+
 ![image-18](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7facd439-94d3-4e5e-adb2-853ad1bd6bc7)
 
 
@@ -279,6 +286,7 @@ sed  -e 's/Ram/Sita/' file23
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+
 ![image-29](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/29de2ae9-3534-41c6-b584-4fd63ea15230)
 
 
@@ -297,6 +305,7 @@ sed -n -e '1,5p' file23
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+
 ![image-32](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/481af551-915d-4ee4-affb-2528903d3535)
 
 
@@ -313,6 +322,7 @@ seq 10
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+
 ![image-35](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/334cef52-f8dd-40f8-b811-edac5bfae54f)
 
 
@@ -419,8 +429,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 tar -cvf backup.tar *
 ## OUTPUT
 
-![image-47](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/ade6e389-88d9-4e18-a2b5-9cad8eeab035)
-
+<img width="1129" height="946" alt="Screenshot 2025-08-20 090253" src="https://github.com/user-attachments/assets/ac82a751-87bc-42a0-b425-ae250f7a45c0" />
 
 mkdir backupdir
  
@@ -429,8 +438,7 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![image-48](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/5bb41cc5-eb5a-4406-868d-b04a5929d057)
-
+<img width="1456" height="994" alt="Screenshot 2025-08-20 085950" src="https://github.com/user-attachments/assets/e72a1b8a-4d63-43f2-8134-918e46e19e06" />
 
 tar -xvf backup.tar
 ## OUTPUT
@@ -442,6 +450,7 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
+
 ![image-50](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/493fb6bd-f365-4e5b-9f33-3bb16e4fa822)
 
  
@@ -482,7 +491,7 @@ cat < scriptest.sh
 bash
 \#!/bin/sh
 echo “File name is $0 ”
-echo "File name is " basename $0
+echo "File name is " `basename $0`
 echo “First arg. is ” $1
 echo “Second arg. is ” $2
 echo “Third arg. is ” $3
@@ -498,7 +507,7 @@ cat scriptest.sh
 bash
 \#!/bin/sh
 echo “File name is $0 ”
-echo "File name is " basename $0
+echo "File name is " `basename $0`
 echo “First arg. is ” $1
 echo “Second arg. is ” $2
 echo “Third arg. is ” $3
@@ -520,6 +529,7 @@ chmod 777 scriptest.sh
  
 ls file1
 ## OUTPUT
+
 ![image-54](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7aa3c8d8-08cf-4789-be3e-8eb056aec0c6)
 
 echo $?
@@ -538,6 +548,7 @@ abcd
  
 echo $?
  ## OUTPUT
+
 ![image-57](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/6cac1aec-beb9-4683-91ba-2a6e062a4fd3)
 
 
@@ -656,6 +667,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+
 ![image-61](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/7d9c90af-b7a3-4cf6-8965-40370727248e)
 
 
@@ -701,6 +713,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+
 ![image-62](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/f0646e68-4bbe-4c0e-bf34-7212526995d8)
 
 
@@ -975,6 +988,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+
 ![image-74](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/d60ca9a2-6750-4f0e-bd8a-bad4b996fbce)
 
 
@@ -1041,6 +1055,7 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+
 ![image-77](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/25960989-f3d5-4a74-9eeb-ad4e77ea6755)
 
 
@@ -1069,7 +1084,7 @@ echo $[ $1 * $2 ]
 }
 if [ $# -eq 2 ]
 then
-value=func $1 $2
+value=`func $1 $2`
 echo "The result is $value"
 else
 echo "Usage: badtest1 a b"
@@ -1078,6 +1093,7 @@ fi
 ## OUTPUT
 
  ./funcex.sh 
+
 ![image-79](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/a353a7b2-7b6e-447f-99d8-eff19742bb64)
 
 
@@ -1085,6 +1101,7 @@ fi
  
  ./funcex.sh 1 2
  ## output:
+
 ![image-80](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/c1b2d17b-036c-4d8b-b615-a4ae510d1db3)
 
  
@@ -1135,6 +1152,7 @@ set +x
 
 ## OUTPUT
  ./argshift.sh 1 2 3
+
 ![image-85 (copy)](https://github.com/HIRU-VIRU/OS-Linux-commands-Shell-script/assets/145972122/22c9f9e9-ae69-4152-9768-0122fe2f2a21)
 
  
